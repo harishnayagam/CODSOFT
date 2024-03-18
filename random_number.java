@@ -1,6 +1,8 @@
 class codechef{
   public static void main(String[] args) {
-    System.out.println("hello");
-    System.out.println("how are you");
+    int a=5;
+    int b=10;
+    System.out.println(a);
+    System.out.println(b);
   }
 }
