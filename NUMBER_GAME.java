@@ -8,12 +8,32 @@ class RandomNumberGuess{
     System.out.println("Well," + name + " ,I think a number between 1 to 100");
     
     int myNumber=getRandomNumber(1, 101);
-    for (int i=0; i<6; i++) {
+    for (int i=0; i<6; i++){
       System.out.println("Take a guess");
+      System.out.println(myNumber);
       Scanner scan2=new Scanner(System.in);
       int yourGuess=scan2.nextInt();
+  
       if(myNumber==yourGuess){
         System.out.println("Your Guess is Correct");
+        if(i==0){
+          System.out.println("You get 6 points");
+        }
+        else if(i==1){
+          System.out.println("You get 5 points");
+        }
+        else if(i==2){
+          System.out.println("You get 4 points");
+        }
+        else if(i==3){
+          System.out.println("You get 3 points");
+        }
+        else if(i==4){
+          System.out.println("You get 2 points");
+        }
+        else{
+          System.out.println("You get 1 points , Better Luck Next Time");
+        }
         break;
       }
       else if (myNumber<yourGuess) {
@@ -27,6 +47,8 @@ class RandomNumberGuess{
       }
     }
   }
+
+
   public static int getRandomNumber(int min,int max){
     Random random=new Random();
     return random.ints(min,max).findFirst().getAsInt();
