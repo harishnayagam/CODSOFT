@@ -10,8 +10,8 @@ class RandomNumberGuess{
     int myNumber=getRandomNumber(1, 101);
     for (int i=0; i<6; i++){
       System.out.println("Take a guess");
-      Scanner scan2=new Scanner(System.in);
-      int yourGuess=scan2.nextInt();
+      Scanner scan1=new Scanner(System.in);
+      int yourGuess=scan1.nextInt();
       if(myNumber==yourGuess){
         System.out.println("Your Guess is Correct");
         if(i==0){
