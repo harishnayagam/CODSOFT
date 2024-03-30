@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class calculation {
+class Calculation {
     public static void main(String[] args) {
         Scanner mark=new Scanner(System.in);
         int sub1=mark.nextInt();

@@ -12,6 +12,8 @@ class RandomNumberGuess{
       System.out.println("Take a guess");
       Scanner scan1=new Scanner(System.in);
       int yourGuess=scan1.nextInt();
+     
+   
       if(myNumber==yourGuess){
         System.out.println("Your Guess is Correct");
         if(i==0){
@@ -44,7 +46,8 @@ class RandomNumberGuess{
         System.out.println("Nope.The Number I think was "+myNumber+" !");
       }
     }
-  }
+   scan.close();
+   }
   public static int getRandomNumber(int min,int max){
     Random random=new Random();
     return random.ints(min,max).findFirst().getAsInt();
