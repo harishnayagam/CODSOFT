@@ -11,7 +11,7 @@ public class Atm_interface
           Scanner scan=new Scanner(System.in);
           System.out.println("Enter your Pin");
         int password=scan.nextInt();
-
+        
     if(pin==password)
     {
                   System.out.println("Enter Your Name");
@@ -28,7 +28,7 @@ public class Atm_interface
           switch(opt)
             {
               case 1:
-                  System.out.println("Add Amout to your Account");
+                  System.out.println("Add Amount to your Account");
                 AmountAdded=scan.nextInt();
                   System.out.println("Successfully Credited");
                 balance = AmountAdded + balance ; 
@@ -68,5 +68,5 @@ public class Atm_interface
     {
     System.out.println("Entered Pin is Wrong");
     }
-  }
+    scan.close();}
 } 

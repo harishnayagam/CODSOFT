@@ -8,10 +8,11 @@ class RandomNumberGuess{
     System.out.println("Well," + name + " ,I think a number between 1 to 100");
     
     int myNumber=getRandomNumber(1, 101);
-    for (int i=0; i<6; i++){
+    for (int i=0; i<6; i++)
+    {
       System.out.println("Take a guess");
-      Scanner scan1=new Scanner(System.in);
-      int yourGuess=scan1.nextInt();
+      
+      int yourGuess=scan.nextInt();
      
    
       if(myNumber==yourGuess){
@@ -45,7 +46,7 @@ class RandomNumberGuess{
         System.out.println();
         System.out.println("Nope.The Number I think was "+myNumber+" !");
       }
-    }
+   }
    scan.close();
    }
   public static int getRandomNumber(int min,int max){
