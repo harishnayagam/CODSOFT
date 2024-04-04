@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class AtmInterface
+public class Atm_interface
 {
   public static void main(String[]args)
   {
