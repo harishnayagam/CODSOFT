@@ -1,6 +1,7 @@
 import java.util.Scanner;
 class Calculation {
     public static void main(String[] args) {
+        System.out .println("Give the mark of your subjects");
         Scanner mark=new Scanner(System.in);
         int sub1=mark.nextInt();
         int sub2=mark.nextInt();
